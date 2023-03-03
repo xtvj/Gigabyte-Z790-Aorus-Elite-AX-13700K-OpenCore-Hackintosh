@@ -10,3 +10,5 @@
 
 制作U盘启动盘我是用官方建议的方式：[making-the-installer](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html#making-the-installer)
 
+# 关于EFI
+EFI会长期更新，但目前很很不完善，不是必须还不建议用。

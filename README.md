@@ -47,3 +47,5 @@ EFI会长期更新，但目前很很不完善，不是必须还不建议用。
 推荐的软件
 
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) ：用来调整屏幕亮度。
+
+目前推荐[nakquada](https://github.com/nakquada/Z790-Hackintosh)的EFI，他的EFI好像跑分比较正常。

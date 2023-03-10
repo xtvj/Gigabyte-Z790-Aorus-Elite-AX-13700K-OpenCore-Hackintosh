@@ -10,7 +10,9 @@
 
 之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。
 
-制作U盘启动盘我是用官方建议的方式：[making-the-installer](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html#making-the-installer)
+制作U盘启动盘我是用官方建议的方式：[rufus-method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html#rufus-method)
+
+安装过程中**启动Apple Logo后会有一段较长时间的屏幕熄灭**，我第一次安装的时候有好几分钟的黑屏时间，目前使用有十几秒的黑屏时间，黑屏时间过后才会出现设置界面或登录界面。
 
 # 关于EFI
 

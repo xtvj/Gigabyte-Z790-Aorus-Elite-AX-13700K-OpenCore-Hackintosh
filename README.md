@@ -3,8 +3,8 @@
 - Motherboard :Gigabyte Z790 Aorus Elite ax DDR5
 - CPU : I7 13700K
 - GPU : Gigabyte RX6600 EAGLE 8G
-- OpenCore : 0.8.9
-- MacOS : Ventura 13.2.1
+- OpenCore : 0.9.0
+- MacOS : Ventura 13.3
 
 # 关于安装
 
@@ -19,6 +19,10 @@
 EFI会长期更新，但目前很很不完善，不是必须还不建议用。
 
 机型改为iMac pro1,1可以提高单核性能
+
+# 关于增量更新
+
+禁用BlueToolFixup.kext 重启再更新即可增量更新
 
 # 关于BIOS
 
@@ -49,5 +53,7 @@ EFI会长期更新，但目前很很不完善，不是必须还不建议用。
 推荐的软件
 
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) ：用来调整屏幕亮度。
+
+- [OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases) ：用来修改EFI文件
 
 目前推荐[nakquada](https://github.com/nakquada/Z790-Hackintosh)的EFI，他的EFI好像跑分比较正常。

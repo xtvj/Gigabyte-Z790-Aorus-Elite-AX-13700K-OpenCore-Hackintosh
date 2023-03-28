@@ -6,6 +6,13 @@
 - OpenCore : 0.9.0
 - MacOS : Ventura 13.3
 
+# 警告！！！
+
+## 目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。
+
+---
+
+
 # 关于安装
 
 之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。

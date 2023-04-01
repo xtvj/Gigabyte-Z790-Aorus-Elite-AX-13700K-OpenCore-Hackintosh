@@ -89,21 +89,21 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>HPET _CRS to XCRS Rename</string>
+                    <string>Change ADBG to XDBG</string>
                     <key>Count</key>
-                    <integer>0</integer>
+                    <integer>1</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>JV9DUlM=</data>
+                    <data>QwMUGUFEQkc=</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
                     <data></data>
                     <key>OemTableId</key>
-                    <data>AAAAAA==</data>
+                    <data>R1NXQXBw</data>
                     <key>Replace</key>
-                    <data>JVhDUlM=</data>
+                    <data>QwMUGVhEQkc=</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -111,7 +111,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>AAAAAA==</data>
+                    <data>U1NEVA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -119,21 +119,21 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>IPIC IRQ 2 Patch</string>
+                    <string>Fix RTC _STA bug</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>IgQAeQA=</data>
+                    <data>oAqTU1RBUwE=</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
                     <data></data>
                     <key>OemTableId</key>
-                    <data>AAAAAA==</data>
+                    <data></data>
                     <key>Replace</key>
-                    <data>IgAAeQA=</data>
+                    <data>oAqRCv8L//8=</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -141,111 +141,21 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>RTC IRQ 8 Patch</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>IgABeQA=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>IgAAeQA=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>TIMR IRQ 0 Patch</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>IgEAeQA=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>IgAAeQA=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>_OSI to XOSI rename - requires SSDT-XOSI.aml</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>X09TSQ==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data>AAAAAA==</data>
-                    <key>Replace</key>
-                    <data>WE9TSQ==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
+                    <data>RFNEVA==</data>
                 </dict>
             </array>
             <key>Quirks</key>
             <dict>
                 <key>FadtEnableReset</key>
-                <true/>
+                <false/>
                 <key>NormalizeHeaders</key>
                 <false/>
                 <key>RebaseRegions</key>
-                <true/>
+                <false/>
                 <key>ResetHwSig</key>
                 <false/>
                 <key>ResetLogoStatus</key>
-                <true/>
+                <false/>
                 <key>SyncTableIds</key>
                 <false/>
             </dict>
@@ -273,7 +183,7 @@
                 <key>EnableSafeModeSlide</key>
                 <true/>
                 <key>EnableWriteUnprotector</key>
-                <false/>
+                <true/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -283,7 +193,7 @@
                 <key>ProtectSecureBoot</key>
                 <false/>
                 <key>ProtectUefiServices</key>
-                <true/>
+                <false/>
                 <key>ProvideCustomSlide</key>
                 <true/>
                 <key>ProvideMaxSlide</key>
@@ -527,24 +437,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>XHCI-unsupported.kext</string>
-                    <key>Comment</key>
-                    <string>V0.9.2 | XHCI-unsupported.kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
                     <string>V2.2.0</string>
@@ -649,24 +541,6 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CpuTopologyRebuild.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CpuTopologyRebuild</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
             </array>
             <key>Block</key>
             <array/>
@@ -686,72 +560,11 @@
             <key>Force</key>
             <array/>
             <key>Patch</key>
-            <array>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>Base</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string>cores_per_package = 128 for Big Sur or later</string>
-                    <key>Count</key>
-                    <integer>1</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>wegag8ABiQ==</data>
-                    <key>Identifier</key>
-                    <string>kernel</string>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data>//3///3//w==</data>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>20.0.0</string>
-                    <key>Replace</key>
-                    <data>wegakLCAiQ==</data>
-                    <key>ReplaceMask</key>
-                    <data>//3///3//w==</data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>Base</key>
-                    <string>_cpuid_set_info</string>
-                    <key>Comment</key>
-                    <string>core/thread count = 24 for 8P+8E Core i9</string>
-                    <key>Count</key>
-                    <integer>2</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>uTUAAAAPMg==</data>
-                    <key>Identifier</key>
-                    <string>kernel</string>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>Replace</key>
-                    <data>uBgAGAAx0g==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                </dict>
-            </array>
+            <array/>
             <key>Quirks</key>
             <dict>
                 <key>AppleCpuPmCfgLock</key>
-                <false/>
+                <true/>
                 <key>AppleXcpmCfgLock</key>
                 <true/>
                 <key>AppleXcpmExtraMsrs</key>
@@ -789,7 +602,7 @@
                 <key>ProvideCurrentCpuInfo</key>
                 <true/>
                 <key>SetApfsTrimTimeout</key>
-                <integer>-1</integer>
+                <integer>0</integer>
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
@@ -800,9 +613,9 @@
                 <key>CustomKernel</key>
                 <false/>
                 <key>FuzzyMatch</key>
-                <true/>
+                <false/>
                 <key>KernelArch</key>
-                <string>Auto</string>
+                <string>x86_64</string>
                 <key>KernelCache</key>
                 <string>Auto</string>
             </dict>
@@ -820,7 +633,7 @@
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <false/>
+                <true/>
                 <key>LauncherOption</key>
                 <string>Full</string>
                 <key>LauncherPath</key>
@@ -834,7 +647,7 @@
                 <key>PickerVariant</key>
                 <string>Auto</string>
                 <key>PollAppleHotKeys</key>
-                <false/>
+                <true/>
                 <key>ShowPicker</key>
                 <true/>
                 <key>TakeoffDelay</key>
@@ -927,7 +740,52 @@
                 <false/>
             </dict>
             <key>Tools</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arguments</key>
+                    <string>Shutdown</string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string>Perform shutdown</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
+                    <key>Name</key>
+                    <string>Shutdown</string>
+                    <key>Path</key>
+                    <string>ResetSystem.efi</string>
+                    <key>RealPath</key>
+                    <false/>
+                    <key>TextMode</key>
+                    <false/>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string>Not signed for security reasons</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Flavour</key>
+                    <string>OpenShell:UEFIShell:Shell</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
+                    <key>Name</key>
+                    <string>UEFI Shell</string>
+                    <key>Path</key>
+                    <string>OpenShell.efi</string>
+                    <key>RealPath</key>
+                    <false/>
+                    <key>TextMode</key>
+                    <false/>
+                </dict>
+            </array>
         </dict>
         <key>NVRAM</key>
         <dict>
@@ -954,7 +812,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>debug=0x100 alcid=1 agdpmod=pikera -radcodec revpatch=auto</string>
+                    <string>-v  agdpmod=pikera</string>
                     <key>csr-active-config</key>
                     <data>/w8AAA==</data>
                     <key>run-efi-updater</key>
@@ -1023,23 +881,23 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>#00000000000000000</string>
+                <string>#F5K948300CDK3F7A8</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>3841</integer>
                 <key>ROM</key>
-                <data>w/TpwXJL</data>
+                <data>JeNKtR5g</data>
                 <key>SpoofVendor</key>
-                <false/>
+                <true/>
                 <key>SystemMemoryStatus</key>
                 <string>Upgradable</string>
                 <key>SystemProductName</key>
                 <string>iMacPro1,1</string>
                 <key>SystemSerialNumber</key>
-                <string>#FFFFFFFFFFFF</string>
+                <string>#F5KZRVZXP7QM</string>
                 <key>SystemUUID</key>
-                <string>#E39F089C-8391-4BC0-BDE5-8524FF2D7385</string>
+                <string>#1D7C9708-FBEF-4140-80A1-9ED7458DD571</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1065,9 +923,9 @@
                 <key>JumpstartHotPlug</key>
                 <false/>
                 <key>MinDate</key>
-                <integer>-1</integer>
+                <integer>0</integer>
                 <key>MinVersion</key>
-                <integer>-1</integer>
+                <integer>0</integer>
             </dict>
             <key>AppleInput</key>
             <dict>
@@ -1103,7 +961,7 @@
                 <key>AudioCodec</key>
                 <integer>0</integer>
                 <key>AudioDevice</key>
-                <string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
+                <string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
                 <key>AudioOutMask</key>
                 <integer>-1</integer>
                 <key>AudioSupport</key>
@@ -1273,7 +1131,7 @@
                 <key>FirmwareVolume</key>
                 <true/>
                 <key>HashServices</key>
-                <true/>
+                <false/>
                 <key>OSInfo</key>
                 <false/>
                 <key>UnicodeCollation</key>

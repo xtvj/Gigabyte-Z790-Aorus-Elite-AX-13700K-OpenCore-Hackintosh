@@ -2,8 +2,8 @@
 
 - Motherboard :Gigabyte Z790 Aorus Elite ax DDR5
 - CPU : I7 13700K
-- GPU : Gigabyte RX6600 EAGLE 8G
-- OpenCore : 0.9.0
+- GPU : Gigabyte RX6600 EAGLE 8G (EFI没对显卡做处理，只要是免驱的显卡都应该适用)
+- OpenCore : 0.9.1
 - MacOS : Ventura 13.3
 
 # 警告！！！
@@ -11,6 +11,14 @@
 ## 目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。
 
 ## 增量更新重启进macos Installers选项，但是进度条不动，进—V看LOG好像没输出。。。
+
+---
+
+
+# 请生成自己的SMBIOS
+
+使用[OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases)随机生成自己的UUID等再使用。
+
 
 ---
 

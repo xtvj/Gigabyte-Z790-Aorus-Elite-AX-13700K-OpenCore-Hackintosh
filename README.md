@@ -4,16 +4,19 @@
 - CPU : I7 13700K
 - GPU : Gigabyte RX6600 EAGLE 8G (EFI没对显卡做处理，只要是免驱的显卡都应该适用)
 - OpenCore : 0.9.1
-- MacOS : Ventura 13.3
+- MacOS : Ventura 13.3.1
 
-# 警告！！！
+# ~~警告！！！~~
 
-## 目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。
+## ~~目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。~~
 
-## 增量更新重启进macos Installers选项，但是进度条不动，进—V看LOG好像没输出。。。
+# 关于增量更新
+
+禁用BlueToolFixup.kext 再更新即可增量更新
+
+我是把蓝牙相关的三个kext（BlueToolFixup.kext、IntelBluetoothFirmware.kext、IntelBTPatcher.kext）都禁用增量更新成功了。
 
 ---
-
 
 # 请生成自己的SMBIOS
 
@@ -25,7 +28,7 @@
 
 # 关于安装
 
-之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。
+之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。原因大概是etcher把EFI分区没有标记，用分区工具将放EFI的分区改为引导分区应该就行，自己没有测试过。
 
 制作U盘启动盘我是用官方建议的方式：[rufus-method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html#rufus-method)
 
@@ -37,9 +40,6 @@ EFI会长期更新，但目前很很不完善，不是必须还不建议用。
 
 机型改为iMac pro1,1可以提高单核性能
 
-# 关于增量更新
-
-禁用BlueToolFixup.kext 重启再更新即可增量更新
 
 # 关于BIOS
 

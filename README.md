@@ -36,7 +36,7 @@
 
 # 关于EFI
 
-EFI会长期更新，但目前很很不完善，不是必须还不建议用。
+EFI会长期更新
 
 机型改为iMac pro1,1可以提高单核性能
 
@@ -72,5 +72,3 @@ EFI会长期更新，但目前很很不完善，不是必须还不建议用。
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) ：用来调整屏幕亮度。
 
 - [OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases) ：用来修改EFI文件
-
-目前推荐[nakquada](https://github.com/nakquada/Z790-Hackintosh)的EFI，他的EFI好像跑分比较正常。

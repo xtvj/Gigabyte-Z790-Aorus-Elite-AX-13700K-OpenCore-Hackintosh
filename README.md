@@ -4,10 +4,9 @@
 
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
-- GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该都适用)
+- GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
 - macOS：Ventura 13.3.1（Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.1
-- MacOS ： Ventura 13.3.1
 - Bios：F6a [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
@@ -118,9 +117,9 @@ EFI会长期更新
 
 ![image info](./img/IMG_0397.avif)
 
----
 
-推荐的软件
+
+# 推荐的软件
 
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) ：用来调整屏幕亮度。
 

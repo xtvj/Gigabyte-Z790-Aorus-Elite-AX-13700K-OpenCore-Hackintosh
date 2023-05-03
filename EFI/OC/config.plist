@@ -633,7 +633,7 @@
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <true/>
+                <false/>
                 <key>LauncherOption</key>
                 <string>Full</string>
                 <key>LauncherPath</key>
@@ -785,6 +785,28 @@
                     <key>TextMode</key>
                     <false/>
                 </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>CleanNvram</string>
+                    <key>Path</key>
+                    <string>CleanNvram.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
             </array>
         </dict>
         <key>NVRAM</key>
@@ -881,13 +903,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>#F5K948300CDK3F7A8</string>
+                <string>00000000000000000</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>3841</integer>
                 <key>ROM</key>
-                <data>JeNKtR5g</data>
+                <data>AAAAAAAA</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -895,9 +917,9 @@
                 <key>SystemProductName</key>
                 <string>iMacPro1,1</string>
                 <key>SystemSerialNumber</key>
-                <string>#F5KZRVZXP7QM</string>
+                <string>000000000000</string>
                 <key>SystemUUID</key>
-                <string>#1D7C9708-FBEF-4140-80A1-9ED7458DD571</string>
+                <string>00000000-0000-0000-0000-000000000000</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

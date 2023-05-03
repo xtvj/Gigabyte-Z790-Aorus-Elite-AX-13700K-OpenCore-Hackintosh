@@ -53,7 +53,7 @@
 
 
 
-现在的启动U盘制作过程（macOS系统、参考了：https://post.smzdm.com/p/a785e48l/）：
+现在的启动U盘制作过程（macOS系统、参考了：https://post.smzdm.com/p/a785e48l/ )
 
 1. 使用[macadmin-scripts](https://github.com/munki/macadmin-scripts)下载相应的离线安装镜像，下载后会自动换成DMG的文件。
 
@@ -82,8 +82,9 @@ EFI会长期更新
 
 
 
-
 # 关于BIOS
+
+并不是非要按我的设置来做，你能启动并成功安装使用的话就不用动它了。
 
 - **Secure Boot : Disabled**
 
@@ -116,6 +117,15 @@ EFI会长期更新
 ![image info](./img/IMG_0396.avif)
 
 ![image info](./img/IMG_0397.avif)
+
+
+
+# 关于功能
+
+- 能正常开机使用
+- 能登录AppStore下载软件
+- 睡眠未测试，我都是直接关机后断电
+- iCloud、Message等未测试，这些功能我没用到。
 
 
 

@@ -1,6 +1,6 @@
 # Gigabyte-Z790-Aorus-Elite-AX-13700K-OpenCore-Hackintosh
 
-### 我的硬件
+### 我的软、硬件
 
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
@@ -29,6 +29,10 @@
 # 请生成自己的SMBIOS
 
 使用[OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases)随机生成自己的UUID等再使用。
+
+生成的SystemSerialNumber可以检查一下能否在官网查的到，如果提示不正常则是可用的，如果查到有保修期之类的信息，说明这个号码是苹果官方售卖的硬件使用的ID，不要用，使用后有封号风险。
+
+一般随机生成的很大概率是查不到信息，可以使用的。
 
 
 
@@ -125,7 +129,18 @@ EFI会长期更新
 - 能正常开机使用
 - 能登录AppStore下载软件
 - 睡眠未测试，我都是直接关机后断电
-- iCloud、Message等未测试，这些功能我没用到。
+- iCloud、Message等未测试，可能是正常的。这些功能我没用到。
+- 安装系统后，推荐使用CleanNvram清一下
+
+
+
+# 关于跑分
+
+R23跑分与Windows下的跑分几乎相同
+
+如果你使用单条内存，Geekbench的跑分可能会低于预期
+
+跑分不能说明一切，实用时软件能调用满荷CPU与GPU就行。
 
 
 

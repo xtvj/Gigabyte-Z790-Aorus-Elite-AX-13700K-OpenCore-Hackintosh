@@ -6,7 +6,7 @@
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
 - macOS：Ventura 13.3.1（Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.1
+- OpenCore ： 0.9.2
 - Bios：F6a [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
@@ -48,6 +48,16 @@
 
 我是使用[SSDTTime](https://github.com/corpnewt/SSDTTime)工具在Windows下生成的，操作很简单，只是当初看英文文档的时候先看的手动制作，以为很难，其实用工具在Windows下选择几个选项就自动生成了。
 
+
+
+#### 定制自己机箱的USB驱动
+
+使用[USBToolBox](https://github.com/USBToolBox/tool/releases)在Windows下制作驱动，替换EFI里的UTBMap.kext就可以。
+
+如果不定制也可以使用主板上的USB接口，只是机箱上的可能识别不到。
+
+
+
 #### U盘启动盘
 
 ~~之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。原因大概是etcher把EFI分区没有标记，用分区工具将放EFI的分区改为引导分区应该就行，自己没有测试过。~~
@@ -61,9 +71,14 @@
 
 1. 使用[macadmin-scripts](https://github.com/munki/macadmin-scripts)下载相应的离线安装镜像，下载后会自动换成DMG的文件。
 
+   [scheblein/macadmin-scripts](https://github.com/scheblein/macadmin-scripts)分支修复了macos13上使用问题
+
 2. 加载DMG镜像文件到系统
+
 3. sudo /Volumes/下载的镜像名/Contents/Resources/createinstallmedia --volume /Volumes/新建的空白镜像名/
+
 4. 再挂载新建的镜像文件，并挂载其EFI文件夹，把EFI复制进去
+
 5. 使用[etcher](https://github.com/balena-io/etcher)写入U盘
 
 
@@ -162,7 +177,13 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
-2023.05.03 ：
+- 2023.05.09
+
+1. 更新到OpenCore0.9.2
+2. 禁用了WiFi驱动，本来启用时WiFi也不能用。
+3. 添加提示USB驱动制作
+
+- 2023.05.03 ：
 
 1. 添加CleanNvram工具，并在启动时显示系统外的工具类选项，如需隐藏可**勾选**Misc→Boot→HideAuxiliary
 2. 更新自己的Bios为F6a，并更新Bios设置截图

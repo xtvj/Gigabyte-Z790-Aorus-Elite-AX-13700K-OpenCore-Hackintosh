@@ -5,7 +5,7 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Ventura 13.3.1（Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Ventura 13.4（Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.2
 - Bios：F6a [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
@@ -176,6 +176,10 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2023.05.20
+
+1. 禁用EnableVectorAcceleration，以修复显卡为Rx6600或Rx6600XT时，开机过程中的随机重启问题，参考地址：https://bbs.pcbeta.com/viewthread-1967636-1-2.html 。我已经开机二十来次，除第一次重启外都没重启。
 
 - 2023.05.09
 

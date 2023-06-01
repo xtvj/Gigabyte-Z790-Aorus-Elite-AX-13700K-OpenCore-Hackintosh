@@ -177,6 +177,10 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
+- 2023.06.01
+
+1. 添加[AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm)驱动，现在WiFi可以正常使用了。
+
 - 2023.05.20
 
 1. 禁用EnableVectorAcceleration，以修复显卡为Rx6600或Rx6600XT时，开机过程中的随机重启问题，参考地址：https://bbs.pcbeta.com/viewthread-1967636-1-2.html 。我已经开机二十来次，除第一次重启外都没重启。

@@ -177,6 +177,16 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
+- 2023.06.05
+
+1. 在13.4以上的系统下，蓝牙不能用，可以通过在NVRAM的7C436110-AB2A-4BBB-A880-FE41995C9F82下添加两个参数来修复
+
+   ```
+   bluetoothExternalDongleFailed Data 00
+   
+   bluetoothInternalControllerInfo Data 0000000000000000000000000000
+   ```
+
 - 2023.06.01
 
 1. 添加[AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm)驱动，现在WiFi可以正常使用了。

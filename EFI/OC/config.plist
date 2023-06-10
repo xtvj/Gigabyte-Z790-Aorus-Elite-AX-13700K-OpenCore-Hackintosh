@@ -12,23 +12,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-Bridge.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
                     <string>SSDT-EC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-HPET.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -69,14 +53,6 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-USBX.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-XOSI.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -241,7 +217,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4</string>
+                    <string>V1.6.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -349,7 +325,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.1 | AppleALC.kext</string>
+                    <string>V1.8.2 | AppleALC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -421,7 +397,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | RestrictEvents.kext</string>
+                    <string>V1.1.1 | RestrictEvents.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -457,7 +433,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.5 | BlueToolFixup.kext</string>
+                    <string>V2.6.6 | BlueToolFixup.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>

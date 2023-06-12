@@ -5,9 +5,9 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Ventura 13.4（Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Ventura 13.5beta（Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.2
-- Bios：F6a [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
+- Bios：F6d [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
@@ -176,6 +176,11 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2023.06.12
+
+1. 更改UIScale值为1，以修复开机时随机的不显示或启动不起来的问题。参考远景一贴子，说是可以设置为-1或1
+2. 目前EFI算是稳定了，暂时没有发现BUG，如有欢迎提Issues，虽说不一定能解决，但一起讨论还有可能帮到我自己呢。
 
 - 2023.06.10
 

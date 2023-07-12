@@ -6,7 +6,7 @@
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
 - macOS：Ventura 13.5beta（Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.2
+- OpenCore ： 0.9.3
 - Bios：F6d [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
@@ -38,19 +38,17 @@
 
 # 关于制作EFI启动盘
 
-按照官方教程[OpenCore-Install-Guide/](https://dortania.github.io/OpenCore-Install-Guide/)操作就行。
+#### 1. [制作ACPI](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime)
 
-大致可分为
-
-<img src="https://xtvj.github.io/images/黑苹果EFI制作流程.svg" alt="黑苹果EFI制作流程" style="zoom:75%;" />
-
-#### [制作ACPI](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime)
+此操作不是必需，可直接使用我生成的ACPI
 
 我是使用[SSDTTime](https://github.com/corpnewt/SSDTTime)工具在Windows下生成的，操作很简单，只是当初看英文文档的时候先看的手动制作，以为很难，其实用工具在Windows下选择几个选项就自动生成了。
 
 
 
-#### 定制自己机箱的USB驱动
+#### 2. 定制自己机箱的USB驱动
+
+此操作很有必要
 
 使用[USBToolBox](https://github.com/USBToolBox/tool/releases)在Windows下制作驱动，替换EFI里的UTBMap.kext就可以。
 
@@ -58,7 +56,7 @@
 
 
 
-#### U盘启动盘
+#### 3. U盘启动盘
 
 ~~之前是下载完整的MacOS镜像，再使用[etcher](https://github.com/balena-io/etcher)刷入U盘，之后把EFI放入U盘的EFI分区中，这样启动时总是找不到MacOS的选项。原因大概是etcher把EFI分区没有标记，用分区工具将放EFI的分区改为引导分区应该就行，自己没有测试过。~~
 
@@ -177,6 +175,8 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
+- 2023.07.12
+  1. 更新[BlueToolFixup.kext](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/5283322833)文件到2.6.8版本以修复MacOS13.5beta中蓝牙能扫描到但不能连接的问题
 - 2023.06.13
 
 1. 更新OpenCore 0.9.3

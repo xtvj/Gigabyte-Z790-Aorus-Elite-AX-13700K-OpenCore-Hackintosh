@@ -5,15 +5,17 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Ventura 13.5beta（Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Ventura 13.5（Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.3
-- Bios：F6d [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
+- Bios：F7 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
 # ~~警告！！！~~
 
  **~~目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。~~**
+
+**更新BIOS之后重启第一次进系统时有时候可能需要执行一次CleanNvram，不然有时候进不去系统，原因未知，也不知道这操作起没起作用。**
 
 
 
@@ -95,7 +97,9 @@
 
 EFI会长期更新
 
-机型改为iMac pro1,1可以提高单核性能
+~~机型改为iMac pro1,1可以提高单核性能~~
+
+已添加CPUFriend和CPUFriendDataProvider，改机型应该基本没影响了。
 
 
 
@@ -141,7 +145,7 @@ EFI会长期更新
 
 - 能正常开机使用
 - 能登录AppStore下载软件
-- 睡眠未测试，我都是直接关机后断电
+- 睡眠不正常
 - iCloud、Message等未测试，可能是正常的。这些功能我没用到。
 - 安装系统后，推荐使用CleanNvram清一下
 
@@ -175,8 +179,15 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
+- 2023.07.29
+
+1. 添加CPUFriend和CPUFriendDataProvider驱动，在MacPro机型下单核性能也正常
+2. 其实不加这两个驱动CPU睿频也能正常，我的13700K也能达到5.4GHz，想要更高就只能通过更改Bios里的设置。
+
 - 2023.07.12
-  1. 更新[BlueToolFixup.kext](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/5283322833)文件到2.6.8版本以修复MacOS13.5beta中蓝牙能扫描到但不能连接的问题
+
+1. 更新[BlueToolFixup.kext](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/5283322833)文件到2.6.8版本以修复MacOS13.5beta中蓝牙能扫描到但不能连接的问题
+
 - 2023.06.13
 
 1. 更新OpenCore 0.9.3

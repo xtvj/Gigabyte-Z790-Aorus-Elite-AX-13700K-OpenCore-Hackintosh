@@ -525,7 +525,7 @@
                     <key>Comment</key>
                     <string>V1.2.7</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CPUFriend</string>
                     <key>MaxKernel</key>
@@ -543,7 +543,7 @@
                     <key>Comment</key>
                     <string>V1.0.1</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string></string>
                     <key>MaxKernel</key>

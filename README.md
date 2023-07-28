@@ -181,6 +181,10 @@ R23跑分与Windows下的跑分几乎相同
 
 - 2023.07.29
 
+1. 默认禁用CPUFriend驱动：原因是[每次升级系统可能要重新生成](https://github.com/stevezhengshiqi/one-key-cpufriend/blob/main/README_CN.md#:~:text=%E6%B3%A8%E6%84%8F%EF%BC%9A%E5%8D%87%E7%BA%A7%20macOS%20%E7%89%88%E6%9C%AC%E5%89%8D%E5%BB%BA%E8%AE%AE%E5%81%9C%E7%94%A8%20CPUFriend.kext%20%E5%92%8C%20CPUFriendDataProvider.kext%E3%80%82%E6%AF%8F%E6%AC%A1%E5%8D%87%E7%BA%A7%20macOS%20%E7%89%88%E6%9C%AC%E5%90%8E%EF%BC%8C%E4%BD%A0%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90%20CPUFriendDataProvider.kext%EF%BC%8C%E5%90%A6%E5%88%99%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86%E4%BC%9A%E4%B8%8D%E6%AD%A3%E5%B8%B8%E6%88%96%E8%80%85%E5%AF%BC%E8%87%B4%E5%86%85%E6%A0%B8%E5%B4%A9%E6%BA%83%E3%80%82)CPUFriendDataProvider，我自己还不确定。
+
+- 2023.07.29
+
 1. 添加CPUFriend和CPUFriendDataProvider驱动，在MacPro机型下单核性能也正常
 2. 其实不加这两个驱动CPU睿频也能正常，我的13700K也能达到5.4GHz，想要更高就只能通过更改Bios里的设置。
 

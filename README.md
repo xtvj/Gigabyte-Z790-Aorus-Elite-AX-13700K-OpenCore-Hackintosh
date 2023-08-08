@@ -5,15 +5,15 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Ventura 13.5（Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Ventura 13.5 （Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.3
 - Bios：F7 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
-# ~~警告！！！~~
+# 警告！！！
 
- **~~目前增量更新时卡进度条，不知道怎么解决。不建议用此EFI进行更新系统。~~**
+**更新BIOS后，BIOS配置可能被重置，需要重新设置。**
 
 **更新BIOS之后重启第一次进系统时有时候可能需要执行一次CleanNvram，不然有时候进不去系统，原因未知，也不知道这操作起没起作用。**
 
@@ -24,7 +24,6 @@
 禁用BlueToolFixup.kext 再更新即可增量更新
 
 我是把蓝牙相关的三个kext（BlueToolFixup.kext、IntelBluetoothFirmware.kext、IntelBTPatcher.kext）都禁用增量更新成功了。
-
 
 
 
@@ -55,6 +54,8 @@
 使用[USBToolBox](https://github.com/USBToolBox/tool/releases)在Windows下制作驱动，替换EFI里的UTBMap.kext就可以。
 
 如果不定制也可以使用主板上的USB接口，只是机箱上的可能识别不到。
+
+而且我自己定制的USB驱动可能不太完善，接口速度不高。
 
 
 
@@ -100,6 +101,8 @@ EFI会长期更新
 ~~机型改为iMac pro1,1可以提高单核性能~~
 
 已添加CPUFriend和CPUFriendDataProvider，改机型应该基本没影响了。
+
+我的机型使用了MacPro，并打开了CPU驱动（CPUFriend和CPUFriendDataProvider）
 
 
 
@@ -178,6 +181,10 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2023.08.08
+
+1. 更新OpenCore 0.9.4
 
 - 2023.07.29
 

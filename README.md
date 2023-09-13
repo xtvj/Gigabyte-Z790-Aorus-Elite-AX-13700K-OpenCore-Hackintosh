@@ -6,8 +6,8 @@
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
 - macOS：Ventura 13.5 （Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.3
-- Bios：F7 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
+- OpenCore ： 0.9.5
+- Bios：F8 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
@@ -181,6 +181,10 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2023.09.13
+
+1. 更新OpenCore 0.9.5
 
 - 2023.08.08
 

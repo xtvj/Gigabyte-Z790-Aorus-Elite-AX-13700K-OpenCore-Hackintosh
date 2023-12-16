@@ -5,9 +5,9 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Ventura 13.5 （Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.5
-- Bios：F8 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
+- macOS：Sonoma 14.2 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- OpenCore ： 0.9.7
+- Bios：F9 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
@@ -181,6 +181,12 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2023.12.16
+
+1. 更新OpenCore 0.9.7
+2. 添加启动参数`revpatch=auto,sbvmm,asset`以修复检测不到更新的BUG，可能下载增量更新后安装失败，可以重启后执行一次CleanNvram，之后就可以正常增量更新了。
+3. 以后只对EFI进行MacOS Sonoma的兼容性测试。
 
 - 2023.09.13
 

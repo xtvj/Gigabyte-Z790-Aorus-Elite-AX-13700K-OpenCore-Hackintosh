@@ -5,7 +5,7 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Sonoma 14.2 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Sonoma 14.2.1 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.7
 - Bios：F9 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
@@ -15,7 +15,7 @@
 
 **更新BIOS后，BIOS配置可能被重置，需要重新设置。**
 
-**更新BIOS之后重启第一次进系统时有时候可能需要执行一次CleanNvram，不然有时候进不去系统，原因未知，也不知道这操作起没起作用。**
+**更新BIOS之后重启第一次进系统时有时候可能需要执行一次ResetNram，不然有时候进不去系统，原因未知，也不知道这操作起没起作用。**
 
 
 
@@ -150,7 +150,7 @@ EFI会长期更新
 - 能登录AppStore下载软件
 - 睡眠不正常
 - iCloud、Message等未测试，可能是正常的。这些功能我没用到。
-- 安装系统后，推荐使用CleanNvram清一下
+- 安装系统后，推荐使用ResetNram清一下
 
 
 
@@ -182,10 +182,16 @@ R23跑分与Windows下的跑分几乎相同
 
 # 更新记录
 
+- 2023.12.24
+
+1. 修复增量更新14.2.1无法安装的问题（更新驱动为开发版最新的驱动，安装最新增量更新时不报错了。）
+2. 修复14.2.1下蓝牙不能启用的问题（更新蓝牙驱动为开发版本。）
+3. 如果更新OpenCore后启动不正常，或蓝牙未正常开启，可以启动时执行一次ResetNram
+
 - 2023.12.16
 
 1. 更新OpenCore 0.9.7
-2. 添加启动参数`revpatch=auto,sbvmm,asset`以修复检测不到更新的BUG，可能下载增量更新后安装失败，可以重启后执行一次CleanNvram，之后就可以正常增量更新了。
+2. 添加启动参数`revpatch=auto,sbvmm,asset`以修复检测不到更新的BUG，可能下载增量更新后安装失败，可以重启后执行一次ResetNram，之后就可以正常增量更新了。
 3. 以后只对EFI进行MacOS Sonoma的兼容性测试。
 
 - 2023.09.13
@@ -249,6 +255,6 @@ R23跑分与Windows下的跑分几乎相同
 
 - 2023.05.03 ：
 
-1. 添加CleanNvram工具，并在启动时显示系统外的工具类选项，如需隐藏可**勾选**Misc→Boot→HideAuxiliary
+1. 添加ResetNram工具，并在启动时显示系统外的工具类选项，如需隐藏可**勾选**Misc→Boot→HideAuxiliary
 2. 更新自己的Bios为F6a，并更新Bios设置截图
 

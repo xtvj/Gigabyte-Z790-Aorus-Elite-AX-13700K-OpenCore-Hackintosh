@@ -5,8 +5,8 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Sonoma 14.2.1 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.7
+- macOS：Sonoma 14.3.1 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- OpenCore ： 0.9.8
 - Bios：F9 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
@@ -181,6 +181,11 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2024.02.21
+
+1. 更新OpenCore 0.9.8
+2. OC_ATTR_USE_GENERIC_LABEL_IMAGE[改为不勾选](https://bbs.pcbeta.com/forum.php?mod=redirect&goto=findpost&ptid=1993971&pid=54954198)、securebootmodel设置为禁用
 
 - 2023.12.24
 

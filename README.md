@@ -5,9 +5,9 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Sonoma 14.3.1 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Sonoma 14.4 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 0.9.8
-- Bios：F9 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
+- Bios：F10 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
 
@@ -90,7 +90,7 @@
 
 # 关于安装
 
-安装过程中**启动Apple Logo后会有一段较长时间的屏幕熄灭**，我第一次安装的时候有好几分钟的黑屏时间，目前使用有十几秒的黑屏时间，黑屏时间过后才会出现设置界面或登录界面。
+RX6600/XT显卡在安装过程中**启动Apple Logo后会有一段较长时间的屏幕熄灭**，我第一次安装的时候有好几分钟的黑屏时间，目前每次启动都会有十几秒的黑屏时间，黑屏时间过后才会出现设置界面或登录界面。其它免驱显卡可能没有这个问题。
 
 
 
@@ -100,9 +100,7 @@ EFI会长期更新
 
 ~~机型改为iMac pro1,1可以提高单核性能~~
 
-已添加CPUFriend和CPUFriendDataProvider，改机型应该基本没影响了。
-
-我的机型使用了MacPro，并打开了CPU驱动（CPUFriend和CPUFriendDataProvider）
+~~已添加CPUFriend和CPUFriendDataProvider，~~改机型应该基本没影响了。（感觉没什么用就去掉了，而且这两个文件是依照13700K生成的，其它CPU可能不适用）
 
 
 
@@ -110,37 +108,24 @@ EFI会长期更新
 
 并不是非要按我的设置来做，你能启动并成功安装使用的话就不用动它了。
 
+开启ReSize Bar
+
 - **Secure Boot : Disabled**
-
-- **Internal Graphics : Disabled**
-
+- **Internal Graphics : Enabled**
 - Above 4G Decoding : Enabled
-
 - Above 4GB MMIO BIOS assignment : Enabled
-
-- Re-Size BAR Support : Disabled
-
+- **Re-Size BAR Support : Enabled**
+- **Aperture Size : 1024MB**
 - **Intel Platform Trust Technology(PTT): Disabled**
-
-- **Hyper-Threading : Enabled**
-
 - **CFG Lock : Disabled**
 
-![image info](./img/IMG_0390.avif)
 
-![image info](./img/IMG_0391.avif)
 
-![image info](./img/IMG_0392.avif)
+![image info](./img/1.avif)
 
-![image info](./img/IMG_0393.avif)
 
-![image info](./img/IMG_0394.avif)
 
-![image info](./img/IMG_0395.avif)
-
-![image info](./img/IMG_0396.avif)
-
-![image info](./img/IMG_0397.avif)
+![image info](./img/2.avif)
 
 
 
@@ -148,7 +133,7 @@ EFI会长期更新
 
 - 能正常开机使用
 - 能登录AppStore下载软件
-- 睡眠不正常
+- 睡眠已正常，感谢**[mingweiarthurli](https://github.com/mingweiarthurli)**和**[jas0nxu](https://github.com/jas0nxu)**
 - iCloud、Message等未测试，可能是正常的。这些功能我没用到。
 - 安装系统后，推荐使用ResetNram清一下
 
@@ -181,6 +166,13 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2024.03.10
+
+1. 更新Bios为F10，Bios打开Re-Size BAR，Aperture Size 为1024MB
+2. 打开OpenCore中的disableIoMapper和disableIoMapperMapping参数
+3. 引导参数中添加-wegnoigpu
+4. 参考[#4](https://github.com/xtvj/Gigabyte-Z790-Aorus-Elite-AX-13700K-OpenCore-Hackintosh/issues/4)
 
 - 2024.02.21
 

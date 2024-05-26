@@ -5,8 +5,8 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Sonoma 14.4 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
-- OpenCore ： 0.9.8
+- macOS：Sonoma 14.5 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- OpenCore ： 1.0.0
 - Bios：F10 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
 
@@ -108,8 +108,6 @@ EFI会长期更新
 
 并不是非要按我的设置来做，你能启动并成功安装使用的话就不用动它了。
 
-开启ReSize Bar
-
 - **Secure Boot : Disabled**
 - **Internal Graphics : Enabled**
 - Above 4G Decoding : Enabled
@@ -133,7 +131,7 @@ EFI会长期更新
 
 - 能正常开机使用
 - 能登录AppStore下载软件
-- 睡眠已正常，感谢**[mingweiarthurli](https://github.com/mingweiarthurli)**和**[jas0nxu](https://github.com/jas0nxu)**
+- 睡眠已正常，感谢 **[mingweiarthurli](https://github.com/mingweiarthurli)** 和 **[jas0nxu](https://github.com/jas0nxu)**
 - iCloud、Message等未测试，可能是正常的。这些功能我没用到。
 - 安装系统后，推荐使用ResetNram清一下
 
@@ -145,7 +143,9 @@ R23跑分与Windows下的跑分几乎相同
 
 如果你使用单条内存，Geekbench的跑分可能会低于预期
 
-跑分不能说明一切，实用时软件能调用满荷CPU与GPU就行。
+~~跑分不能说明一切，实用时软件能调用满荷CPU与GPU就行。~~
+
+有需求的，请自行生成CPUFriend等驱动并添加，最好在Issues中分享下。
 
 
 
@@ -166,6 +166,13 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2024.05.26
+
+1. 更新OpenCore为1.0.0
+2. 由于Bios更新后生成的ACPI文件有一点点区别（实例上代码里就两三处的判断条件改了一下），就更新了ACPI文件。
+3. 目前我使用macOS和Windwos双系统，之前启动到macOS阶段偶尔会随机重启，现在不会了，不知道是更新了什么才修复的。
+4. 此EFI更新不那么频繁了，有玩机高手的网友开个仓库分享下自己的EFI呗。
 
 - 2024.03.10
 

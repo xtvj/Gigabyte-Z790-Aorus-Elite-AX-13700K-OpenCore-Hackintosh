@@ -5,7 +5,7 @@
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
 - CPU：I7 13700K （对CPU没特别要求，别的CPU只需在config.plist中更改显示名就可以）
 - GPU：Gigabyte RX6600 EAGLE 8G (只要是免驱的显卡都应该适用)
-- macOS：Sonoma 14.5 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
+- macOS：Sequoia 15.0 （理论上Sonoma、Ventura所有版本都适用，Monterey、Big Sur没测试过）
 - OpenCore ： 1.0.0
 - Bios：F10 [官方地址](https://www.aorus.com/motherboards/Z790-AORUS-ELITE-AX-rev-10/Support)
 
@@ -85,6 +85,13 @@
 
 
 或使用[gibMacOS](https://github.com/corpnewt/gibMacOS)下载PKG文件安装到系统，再用[官方的方法](https://support.apple.com/en-us/HT201372)制作U盘也很方便
+
+#### 4. WiFi驱动
+
+根据网友的测试使用[itlwm](https://github.com/OpenIntelWireless/itlwm/releases)+[HeliPort](https://github.com/OpenIntelWireless/HeliPort)的方式可以驱动，
+
+使用[AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)的方式可能驱动不成功。
+
 
 
 
@@ -166,6 +173,11 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2024.06.24
+
+1. 更新蓝牙驱动以适配macOS15
+2. 更新其它驱动
 
 - 2024.05.26
 

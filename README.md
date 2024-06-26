@@ -107,8 +107,6 @@ EFI会长期更新
 
 ~~机型改为iMac pro1,1可以提高单核性能~~
 
-~~已添加CPUFriend和CPUFriendDataProvider，~~改机型应该基本没影响了。（感觉没什么用就去掉了，而且这两个文件是依照13700K生成的，其它CPU可能不适用）
-
 
 
 # 关于BIOS
@@ -148,11 +146,7 @@ EFI会长期更新
 
 R23跑分与Windows下的跑分几乎相同
 
-如果你使用单条内存，Geekbench的跑分可能会低于预期
-
-~~跑分不能说明一切，实用时软件能调用满荷CPU与GPU就行。~~
-
-有需求的，请自行生成CPUFriend等驱动并添加，最好在Issues中分享下。
+如果你使用单条内存、或散热系统不行，Geekbench的跑分可能会低于预期
 
 
 
@@ -173,6 +167,11 @@ R23跑分与Windows下的跑分几乎相同
 
 
 # 更新记录
+
+- 2024.06.26
+
+1. 重新添加CPUFriend等三个驱动。
+2. 如果长时间未更新，可自行使用[OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases)工具升级。
 
 - 2024.06.24
 

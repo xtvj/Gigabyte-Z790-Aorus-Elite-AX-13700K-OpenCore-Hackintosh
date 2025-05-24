@@ -1,5 +1,10 @@
 # Gigabyte-Z790-Aorus-Elite-AX-13700K-OpenCore-Hackintosh
 
+### 非常抱歉，停更了
+
+非常抱歉，我离开了我的国家，并在离开前砸毁了我的所有硬件设备，来到了一个自由的国度后也不可能购买相同的硬件了，刚才看到还有人在fork这个仓库,就想说一声我不再更新了，实在抱歉。请选择其他人的或自行修改更新内容。抱歉，抱歉，抱歉。
+
+
 ### 我的软、硬件
 
 - Motherboard：Gigabyte Z790 Aorus Elite ax DDR5 Ver1.0
